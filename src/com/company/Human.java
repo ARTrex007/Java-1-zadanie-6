@@ -5,7 +5,7 @@ public class Human
     public String imie, nazwisko, zawod, animal_pet;
     public int wiek;
     public double masa;
-    public String samochod;
+    public Car samochod;
     public static int counter=0;
 
     public Human(String imie, String nazwisko, String zawod, int wiek, double masa) {
@@ -19,9 +19,9 @@ public class Human
         counter++;
     }
 
-    void Rejestracja_Samochodu(String samochod)
+    void Rejestracja_Samochodu(Car samochod)
     {
         this.samochod = samochod;
-        System.out.println(imie + " " + nazwisko + " posiadł samochód o rejestracji: " + this.samochod);
+        System.out.println(imie + " " + nazwisko + " posiadł samochód: " + this.samochod.model);
     }
 }
